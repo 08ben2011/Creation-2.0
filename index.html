@@ -4,40 +4,331 @@
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great Vibes"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creation</title>
+    <title>Creation: the meaning</title>
   </head>
   <body>
-    <div class="card">
-      <div class="card__inner">
-        <div class="card__face card-face-front">
-          <div class="card_front_header">
-            <img src="img/swan.jpg" alt="swan" />
-            <h3>Swan</h3>
-            <h4>(lat) Cygnus</h4>
+    <header class="creation">
+      <img src="img/earth.jpeg" alt="" />
+      <h1 id="title">Creation: the meaning</h1>
+    </header>
+
+    <div id="filter">
+      <button
+        id="virtue"
+        class="virtues btn"
+        onclick="filterCreation('virtue')"
+      >
+        Virtues
+      </button>
+      <button id="vice" class="vices btn" onclick="filterCreation('vice')">
+        Vices
+      </button>
+
+      <button
+        id="birdsBirds"
+        class="birds btn"
+        onclick="filterCreation('bird')"
+      >
+        Birds
+      </button>
+      <button
+        id="mammalsMammals"
+        class="mammals btn"
+        onclick="filterCreation('mammal')"
+      >
+        Mammals
+      </button>
+      <button id="allShow" class="showAll btn" onclick="filterCreation('all')">
+        Show All
+      </button>
+    </div>
+    <!-- container with cards -->
+    <div class="container">
+      <div class="card-virtue bird animals virtue">
+        <div class="card__inner">
+          <div class="card__face card-face-front">
+            <div class="card_front_header">
+              <div class="left-header">
+                <img src="img/swan.jpg" alt="swan" />
+              </div>
+              <div class="right_header">
+                <h3>Swan</h3>
+                <h4>(Cygnus)</h4>
+                <p class="summary" id="summary">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swans are the largest extant
+                  members of the waterfowl family Anatidae and are among the
+                  largest flying birds. Swans are almost entirely herbivorous,
+                  although they may eat small amounts of aquatic animals.
+                </p>
+              </div>
+            </div>
+            <div class="card-front-content">
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swans mate for life. Swans' nests
+                are on the ground near water and about a metre across. Unlike
+                many other ducks and geese, the male helps with the nest
+                construction, and will also take turns incubating the eggs. The
+                mother spend most time with the cygnets. Dad's main role is to
+                patrol their territory and protect his family.
+              </p>
+            </div>
           </div>
-          <div class="card-front-content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias dolor, corporis provident quod, aliquid, sunt accusamus
-              dolorem temporibus vel iusto optio perferendis necessitatibus
-              totam ipsam distinctio dolore aspernatur explicabo! Placeat.
-            </p>
+          <div class="card__face card-face-back">
+            <div class="card__back__content">
+              <h2 class="swan">Elegance</h2>
+              <p class="lessons">Fidelity, family care and protection</p>
+            </div>
           </div>
         </div>
-        <div class="card__face card-face-back">
-          <div class="card__content">
-            <h2>Elegance</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo
-              quidem labore nam ducimus consectetur nihil rerum reprehenderit
-              nesciunt. Quos dolore culpa unde voluptatum! Dignissimos non
-              corporis quas ut dolorum.
-            </p>
+      </div>
+
+      <div class="card-virtue bird animals virtue">
+        <div class="card__inner">
+          <div class="card__face card-face-front">
+            <div class="card_front_header">
+              <div class="left-header">
+                <img src="img/eagle.jpeg" alt="eagle" />
+              </div>
+              <div class="right_header">
+                <h3>Eagle</h3>
+                <h4>(Haliaeetus leucocephalus)</h4>
+                <p class="summary" id="summary">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bald eagles can fly 32-64 km
+                  miles per hour in normal flight and can dive at speeds of
+                  120-160 km pe hour. They can fly at altitudes of 3000 meters
+                  or more.
+                </p>
+              </div>
+            </div>
+            <div class="card-front-content">
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bald eagles have excellent
+                eyesight, large talons and a hooked beak. These features aid
+                eagles in finding, catching and eating their prey. An eagle’s
+                excellent eyesight is used while hunting when soaring high above
+                the ground or from perches overlooking the water.
+              </p>
+            </div>
+          </div>
+          <div class="card__face card-face-back">
+            <div class="card__back__content">
+              <h2 class="swan">Majesty</h2>
+              <p class="lessons">Keep the standard high</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-vice bird animals vice">
+        <div class="card__inner">
+          <div class="card__face card-face-front">
+            <div class="card_front_header">
+              <div class="left-header">
+                <img src="img/peacock.jpeg" alt="peacock" />
+              </div>
+              <div class="right_header">
+                <h3>Peacock</h3>
+                <h4>(Pavo cristatus)</h4>
+                <p class="summary" id="summary">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peafowl are forest birds that
+                  nest on the ground, but roost in trees. They are terrestrial
+                  feeders. All species of peafowl are believed to be polygamous.
+                </p>
+              </div>
+            </div>
+            <div class="card-front-content">
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The males display in courtship by
+                raising the upper-tail coverts into an arched fan. The wings are
+                held half open and drooped and it periodically vibrates the long
+                feathers, producing a ruffling sound. The cock faces the hen
+                initially and struts and prances around and sometimes turns
+                around to display the tail.
+              </p>
+            </div>
+          </div>
+          <div class="card__face card-face-back">
+            <div class="card__back__content">
+              <h2 class="swan">Pride</h2>
+              <p class="lessons">polygamous</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="card-virtue bird animals virtue">
+      <div class="card__inner">
+        <div class="card__face card-face-front">
+          <div class="card_front_header">
+            <div class="left-header">
+              <img src="img/apus-apus.jpg" alt="“Swift”" />
+            </div>
+            <div class="right_header">
+              <h3>Swift</h3>
+              <h4>(Apus apus)</h4>
+              <p class="summary" id="summary">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chimney swifts are very fast
+                fliers and spend most of their lives in midair. They eat, drink
+                and mate while flying, only stopping to raise young. They even
+                take their baths in flight by dipping in a water source briefly.
+              </p>
+            </div>
+          </div>
+          <div class="card-front-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It’s estimated they fly more than
+              800 kilometers each day. Common swifts are migratory. Their summer
+              breeding range runs from Portugal and Ireland in the West across
+              to China and Siberia in the East.
+            </p>
+          </div>
+        </div>
+        <div class="card__face card-face-back">
+          <div class="card__back__content">
+            <h2 class="swan">Master of the sky</h2>
+            <p class="lessons">Aim for eternity, for heaven</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card-vice mammal animals vice">
+      <div class="card__inner">
+        <div class="card__face card-face-front">
+          <div class="card_front_header">
+            <div class="left-header">
+              <img src="img/badger.jpeg" alt=“badger” />
+            </div>
+            <div class="right_header">
+              <h3>Badger</h3>
+              <h4>(Meles meles)</h4>
+              <p class="summary" id="summary">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Badgers are nocturnal, meaning they are most active at night and sleep during the day. 
+                Honey badgers are known for their ferocity.
+              </p>
+            </div>
+          </div>
+          <div class="card-front-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They have a resistance to snake venom. While many badgers are social, the American badger is not, and spends most of its time alone.
+              
+            </p>
+          </div>
+        </div>
+        <div class="card__face card-face-back">
+          <div class="card__back__content">
+            <h2 class="swan">Grumpy</h2>
+            <p class="lessons">ferocity, callousness</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-virtue bird animals virtue">
+    <div class="card__inner">
+      <div class="card__face card-face-front">
+        <div class="card_front_header">
+          <div class="left-header">
+            <img src="img/crow.jpeg" alt=“Crow” />
+          </div>
+          <div class="right_header">
+            <h3>Crow</h3>
+            <h4>(Corvus)</h4>
+            <p class="summary" id="summary">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Members of the genus Corvus can be found on every continent except Antarctica and South America (although other close relatives live there). Like a lot of intelligent animals, most crows are quite social.
+            </p>
+          </div>
+        </div>
+        <div class="card-front-content">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Juvenile birds are frequently seen defending their parents’ nest from predators. The South Pacific crow uses the hooks, which are made from pliable twigs that the crows bend using their beaks and feet into a J-shape, to extract insects from tight crevices.
+          </p>
+        </div>
+      </div>
+      <div class="card__face card-face-back">
+        <div class="card__back__content">
+          <h2 class="swan">Intelligence</h2>
+          <p class="lessons">Family care and protection, social behaviour</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="card-vice mammal animals vice">
+    <div class="card__inner">
+      <div class="card__face card-face-front">
+        <div class="card_front_header">
+          <div class="left-header">
+            <img src="img/dog.jpeg" alt=“dog” />
+          </div>
+          <div class="right_header">
+            <h3>Dog</h3>
+            <h4>(Canis lupus familiaris)</h4>
+            <p class="summary" id="summary">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dog is a domesticated descendant of the wolf, the gray wolf is the dog's closest living relative. Dogs are the most variable mammal on earth, with around 450 globally recognized dog breeds.
+            </p>
+          </div>
+        </div>
+        <div class="card-front-content">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dog's servility, which is their willingness to serve and follow the lead of humans, is it's main trait. This servility manifests in several ways: eagerness to please, obedience, adaptability, affectionate behavior.
+          </p>
+        </div>
+      </div>
+      <div class="card__face card-face-back">
+        <div class="card__back__content">
+          <h2 class="swan">Servility</h2>
+          <p class="lessons">if you give me, i will serve you, otherwise...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-vice mammal animals vice">
+  <div class="card__inner">
+    <div class="card__face card-face-front">
+      <div class="card_front_header">
+        <div class="left-header">
+          <img src="img/fox.jpeg" alt=“fox” />
+        </div>
+        <div class="right_header">
+          <h3>Fox</h3>
+          <h4>(Vulpes vulpes linn)</h4>
+          <p class="summary" id="summary">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is widely held as a symbol of animal cunning. The red fox has the largest natural distribution of any land mammal except human beings. Their preferred habitats are mixed landscapes, but they live in environments ranging from Arctic tundra to arid desert.
+          </p>
+        </div>
+      </div>
+      <div class="card-front-content">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fox families, also known as a skulk or leash of foxes, live in underground dens. When the vixen has her pups — a litter of foxes can range between one and 11 pups — they live in the den together for seven months while the pups grow. 
+        </p>
+      </div>
+    </div>
+    <div class="card__face card-face-back">
+      <div class="card__back__content">
+        <h2 class="swan">Cunningness</h2>
+        <p class="lessons">do not trust me...</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
 
     <script src="script.js"></script>
   </body>
