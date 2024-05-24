@@ -256,3 +256,68 @@ document.getElementById("allShow").addEventListener("click", function () {
   // Reset the filter
   filterCreation("all");
 });
+
+function dateAndTime() {
+  const currentdate = new Date();
+  const date = document.getElementById("date");
+  var dateTime =
+    currentdate.getDate() +
+    "/" +
+    (currentdate.getMonth() + 1) +
+    "/" +
+    currentdate.getFullYear() +
+    "  " +
+    currentdate.getHours() +
+    ":" +
+    currentdate.getMinutes() +
+    ":" +
+    currentdate.getSeconds();
+
+  date.textContent = dateTime;
+}
+
+setInterval(dateAndTime, 1000);
+
+const words = ["staring", "looking"];
+const colors = ["word1", "word2"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+  let word = words[i].split("");
+  let colorClass = colors[i];
+  var loopTyping = function () {
+    if (word.length > 0) {
+      document.getElementById(
+        "word"
+      ).innerHTML += `<span class="${colorClass}">${word.shift()}</span>`;
+    } else {
+      deletingEffect();
+      return false;
+    }
+    timer = setTimeout(loopTyping, 500);
+  };
+  loopTyping();
+}
+
+function deletingEffect() {
+  let word = words[i].split("");
+  var loopDeleting = function () {
+    if (word.length > 0) {
+      word.pop();
+      document.getElementById("word").innerHTML = word.join("");
+    } else {
+      if (words.length > i + 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+      typingEffect();
+      return false;
+    }
+    timer = setTimeout(loopDeleting, 200);
+  };
+  loopDeleting();
+}
+
+typingEffect();
