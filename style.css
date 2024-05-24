@@ -469,6 +469,7 @@ padding:50px;
             height: 120%;
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             margin-left: 50px;
             margin-top: 20px;
             justify-content:center;
@@ -476,6 +477,7 @@ padding:50px;
             padding: 10px;
             box-sizing: border-box;
             text-align: center;
+            
            }
           
            .styled-meaning {
